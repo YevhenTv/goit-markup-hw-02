@@ -17,29 +17,18 @@
     --list-title-item: #212121;
     --list-text-item: #757575;
 
-    ;
+}
 
 /* ------------------------------------- */
-}
 
 body {
     font-family: 'Roboto', sans-serif;
     color:var(--basic-text-color)
 } 
 
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
 /* ------------------Header_____________________ */
+
+
 .header-logo {
     text-decoration: none;
     list-style: none;
@@ -69,10 +58,11 @@ body {
 
 .list {
     list-style: none;
+    color: var(--header-basic-color)
 }
 
-.link {
-    text-decoration: none;
+.link.current {
+    color:var(--accent-color);
 }
 
 .header {
@@ -86,7 +76,13 @@ background: #FFFFFF;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    color: var(--header-second-color); 
+    color: var(--header-basic-color);
+    text-decoration: none;
+}
+
+.list-contact {
+    text-decoration: none;
+    list-style: none;
 }
 
 .header-mail {
@@ -244,6 +240,12 @@ color: var(--secondary-title-color);
  .footer {
      background-color: var(--footer-background);
  }
+
+ .footer-contact {
+     text-decoration: none;
+     font-style: normal;
+ }
+
  .footer-address {
      font-weight: 400;
      font-size: 14px;
@@ -291,7 +293,9 @@ color: var(--secondary-title-color);
     color: var(--accent-color)
 }
 
-
+.footer-studio-logo {
+    color: #FFFFFF;
+}
 
 /* --------- Портфолио кнопки -----------*/
 .btn {
